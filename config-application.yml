@@ -5,14 +5,14 @@ server:
   port: 8888
 ---
 server:
-  port: 4001
+  port: 1101
 spring:
   profiles: dev
   application:
     name: microservice-config-dev
 ---
 server:
-  port: 4002
+  port: 1102
 spring:
   profiles: prod
   application:
