@@ -20,7 +20,7 @@ eureka:
     enable-self-preservation: true
 ---
 server:
-  port: 6001
+  port: 6002
 spring:
   profiles: dev
   application:
