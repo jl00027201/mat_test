@@ -15,12 +15,12 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://eureka6002:6002/eureka/
+      defaultZone: http://eureka6001:6001/eureka/
   server:
     enable-self-preservation: true
 ---
 server:
-  port: 6001
+  port: 6002
 spring:
   profiles: dev
   application:
@@ -32,6 +32,6 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://eureka6002:6002/eureka/
+      defaultZone: http://eureka6001:6001/eureka/
   server:
     enable-self-preservation: false
