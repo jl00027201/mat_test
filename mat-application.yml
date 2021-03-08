@@ -5,9 +5,9 @@ spring:
 server:
   port: 8912
 mybatis:
-  config-location: classpath:mybatis.cfg.xml # mybatis配置文件所在路径
+  config-location: classpath:mybatis/mybatis.cfg.xml # mybatis配置文件所在路径
   type-aliases-package: com.jinlong.springcloud.entities # 所有Entity别名类所在包
-  mapper-locations: classpath:mapper/**/*.xml # mapper映射文件
+  mapper-locations: classpath:mybatis/mapper/**/*.xml # mapper映射文件
 spring:
   profiles: dev
   application:
@@ -36,9 +36,9 @@ eureka:
 server:
   port: 8812
 mybatis:
-  config-location: classpath:mybatis.cfg.xml # mybatis配置文件所在路径
+  config-location: classpath:mybatis/mybatis.cfg.xml # mybatis配置文件所在路径
   type-aliases-package: com.jinlong.springcloud.entities # 所有Entity别名类所在包
-  mapper-locations: classpath:mapper/**/*.xml # mapper映射文件
+  mapper-locations: classpath:mybatis/mapper/**/*.xml # mapper映射文件
 spring:
   profiles: prod
   application:
@@ -64,4 +64,4 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}_hystrix # 指定实例ID,就不会显示主机名称
     prefer-ip-address: true
 emp:
- name: xyd
+  name: xyd
