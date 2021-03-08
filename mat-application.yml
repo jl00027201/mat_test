@@ -11,7 +11,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: microservice-product #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
+    name: microservice-mat #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql驱动包
@@ -30,7 +30,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka6002:6002/eureka/,http://eureka6001:6001/eureka/
   instance:
-    instance-id: ${spring.application.name}:${server.port}_hystrix # 指定实例ID,就不会显示主机名称
+    instance-id: ${spring.application.name}:${server.port}   #指定实例ID,就不会显示主机名称
     prefer-ip-address: true
 ---
 server:
@@ -42,7 +42,7 @@ mybatis:
 spring:
   profiles: prod
   application:
-    name: microservice-product-bus666 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
+    name: microservice-mat #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql驱动包
@@ -61,7 +61,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka6002:6002/eureka/,http://eureka6001:6001/eureka/
   instance:
-    instance-id: ${spring.application.name}:${server.port}_hystrix # 指定实例ID,就不会显示主机名称
+    instance-id: ${spring.application.name}:${server.port} #指定实例ID,就不会显示主机名称
     prefer-ip-address: true
 emp:
   name: xyd
