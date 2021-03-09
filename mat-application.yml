@@ -64,4 +64,4 @@ eureka:
     instance-id: ${spring.application.name}:${server.port} #指定实例ID,就不会显示主机名称
     prefer-ip-address: true
 group:
-  name: xyd788
+  name: xyd789
