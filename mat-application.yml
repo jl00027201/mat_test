@@ -34,7 +34,7 @@ eureka:
     prefer-ip-address: true
 ---
 server:
-  port: 8812
+  port: 8712
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml # mybatis配置文件所在路径
   type-aliases-package: com.jinlong.springcloud.entities # 所有Entity别名类所在包
